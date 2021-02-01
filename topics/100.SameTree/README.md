@@ -1,4 +1,4 @@
-[100.Same Tree](https://leetcode.com/problems/same-tree/)
+# [100.Same Tree](https://leetcode.com/problems/same-tree/)
 
 Given the roots of two binary trees `p` and `q`, write a function to check if
 they are the same of not.
@@ -31,3 +31,7 @@ Constraints:
 
 - The number of nodes in both trees is in the range `[0, 100]`.
 - -10^4 <= Node.val <= 10^4
+
+## 思路
+
+- 递归比较每个节点
