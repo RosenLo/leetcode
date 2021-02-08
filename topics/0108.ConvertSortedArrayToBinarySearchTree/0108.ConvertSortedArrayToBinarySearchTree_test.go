@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/rosenlo/leetcode/util"
+	"github.com/rosenlo/leetcode/structure/tree"
 )
 
 func TestSortedArrayToBST(t *testing.T) {
@@ -16,14 +16,14 @@ func TestSortedArrayToBST(t *testing.T) {
 		{},
 	}
 	results := [][]int{
-		{0, -3, 9, -10, util.NULL, 5},
+		{0, -3, 9, -10, tree.NULL, 5},
 		{3, -6, 11, -9, 0, 7, 13},
 		{3, 1, 5, 0, 2, 4},
 		{1},
 		{},
 	}
 	for i := 0; i < len(tests); i++ {
-		ret := util.TreeNode2Ints(sortedArrayToBST(tests[i]))
+		ret := tree.TreeNode2Ints(sortedArrayToBST(tests[i]))
 		if !reflect.DeepEqual(results[i], ret) {
 			t.Fatalf("Wrong Answer, testcase: %v, actual: %v expected: %v", tests[i], ret, results[i])
 		}

@@ -3,27 +3,27 @@ package leetcode
 import (
 	"testing"
 
-	"github.com/rosenlo/leetcode/util"
+	"github.com/rosenlo/leetcode/structure/tree"
 )
 
 func TestMaxDepth(t *testing.T) {
 	tests := [][]int{
-		{3, 9, 20, util.NULL, util.NULL, 15, 7},
-		{1, util.NULL, 2},
+		{3, 9, 20, tree.NULL, tree.NULL, 15, 7},
+		{1, tree.NULL, 2},
 		{1},
 		{},
 		{
 			3,
 			4, 5,
-			-7, -6, util.NULL, util.NULL,
-			-7, util.NULL, -5, util.NULL, util.NULL, util.NULL, -4,
+			-7, -6, tree.NULL, tree.NULL,
+			-7, tree.NULL, -5, tree.NULL, tree.NULL, tree.NULL, -4,
 		},
 		{
 			1,
 			2, 2,
-			3, 3, util.NULL, util.NULL,
-			util.NULL, 4,
-			util.NULL, util.NULL, 5, 5,
+			3, 3, tree.NULL, tree.NULL,
+			tree.NULL, 4,
+			tree.NULL, tree.NULL, 5, 5,
 		},
 	}
 	results := []int{
@@ -35,7 +35,7 @@ func TestMaxDepth(t *testing.T) {
 		5,
 	}
 	for i := 0; i < len(tests); i++ {
-		root := util.Ints2TreeNode(tests[i])
+		root := tree.Ints2TreeNode(tests[i])
 		ret := maxDepth(root)
 		if ret != results[i] {
 			t.Fatalf("Wrong Answer, testcase: %v, actual: %v expected: %v", tests[i], ret, results[i])

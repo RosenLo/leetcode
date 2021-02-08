@@ -1,8 +1,6 @@
 package leetcode
 
-import (
-	"github.com/rosenlo/leetcode/util"
-)
+import "github.com/rosenlo/leetcode/structure/tree"
 
 /**
  * Definition for a binary tree node.
@@ -13,7 +11,7 @@ import (
  * }
  */
 
-type TreeNode = util.TreeNode
+type TreeNode = tree.TreeNode
 
 func isSameTree(p *TreeNode, q *TreeNode) bool {
 	if p == nil && q == nil {

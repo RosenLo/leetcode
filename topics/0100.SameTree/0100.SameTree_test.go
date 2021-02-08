@@ -3,7 +3,7 @@ package leetcode
 import (
 	"testing"
 
-	"github.com/rosenlo/leetcode/util"
+	"github.com/rosenlo/leetcode/structure/tree"
 )
 
 func TestSameTree(t *testing.T) {
@@ -22,8 +22,8 @@ func TestSameTree(t *testing.T) {
 		true,
 	}
 	for i := 0; i < len(tests); i++ {
-		p := util.Ints2TreeNode(tests[i][0])
-		q := util.Ints2TreeNode(tests[i][1])
+		p := tree.Ints2TreeNode(tests[i][0])
+		q := tree.Ints2TreeNode(tests[i][1])
 		ret := isSameTree(p, q)
 		t.Log(tests[i], ret, results[i])
 		if ret != results[i] {

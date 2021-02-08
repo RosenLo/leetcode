@@ -3,7 +3,7 @@ package leetcode
 import (
 	"testing"
 
-	"github.com/rosenlo/leetcode/util"
+	"github.com/rosenlo/leetcode/structure/tree"
 )
 
 func TestSymeetricTree(t *testing.T) {
@@ -26,7 +26,7 @@ func TestSymeetricTree(t *testing.T) {
 		true,
 	}
 	for i := 0; i < len(tests); i++ {
-		root := util.Ints2TreeNode(tests[i])
+		root := tree.Ints2TreeNode(tests[i])
 		ret := isSymmetric(root)
 		t.Log(tests[i], ret, results[i])
 		if ret != results[i] {
