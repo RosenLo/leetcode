@@ -19,3 +19,4 @@ No.|Title|Solution|Acceptance|Difficulty|
 0110|Balanced Binary Tree|[Go](https://github.com/rosenlo/leetcode/tree/master/topics/0110.BalancedBinaryTree)|44.7%|Easy
 0111|Minimum Depth of Binary Tree|[Go](https://github.com/rosenlo/leetcode/tree/master/topics/0111.MinimumDepthOfBinaryTree)|39.5%|Easy
 0112|Path Sum|[Go](https://github.com/rosenlo/leetcode/tree/master/topics/0112.PathSum)|42.4%|Easy
+0226|Invert Binary Tree|[Go](https://github.com/rosenlo/leetcode/tree/master/topics/0226.InvertBinaryTree)|66.9%|Easy
