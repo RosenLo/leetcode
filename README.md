@@ -22,3 +22,4 @@ No.|Title|Solution|Acceptance|Difficulty|
 0226|Invert Binary Tree|[Go](https://github.com/rosenlo/leetcode/tree/master/topics/0226.InvertBinaryTree)|66.9%|Easy
 0235|Lowest Common Ancestor of a Binary Search Tree|[Go](https://github.com/rosenlo/leetcode/tree/master/topics/0235.LowestCommonAncestorOfABinarySearchTree)|51.7%|Easy
 0257|Binary Tree Paths|[Go](https://github.com/rosenlo/leetcode/tree/master/topics/0257.BinaryTreePaths)|53.6%|Easy
+0404|Sum of Left Leaves|[Go](https://github.com/rosenlo/leetcode/tree/master/topics/0404.SumOfLeftLeaves)|52.3%|Easy
