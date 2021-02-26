@@ -8,6 +8,40 @@ type TreeNode struct {
 
 const NULL = -1 << 16
 
+/**
+      1
+	 / \
+	2   3
+   / \   \
+  4   5   6
+
+  层次遍历：[1, 2, 3, 4, 5, 6]
+  前序遍历：[1, 2, 4, 5, 3, 6]
+  中序遍历: [4, 2, 5, 1, 3, 6]
+  后续遍历：[4, 5, 2, 6, 3, 1]
+
+*/
+func PreOrder(node *TreeNode) []int {
+	if node == nil {
+		return []int{}
+	}
+	return append(append([]int{node.Val}, PreOrder(node.Left)...), PreOrder(node.Right)...)
+}
+
+func InOrder(node *TreeNode) []int {
+	if node == nil {
+		return []int{}
+	}
+	return append(append(InOrder(node.Left), node.Val), InOrder(node.Right)...)
+}
+
+func PostOrder(node *TreeNode) []int {
+	if node == nil {
+		return []int{}
+	}
+	return append(append(PostOrder(node.Left), PostOrder(node.Right)...), node.Val)
+}
+
 func Ints2TreeNode(ints []int) *TreeNode {
 	n := len(ints)
 	if n == 0 {
