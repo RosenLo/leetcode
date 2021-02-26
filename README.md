@@ -24,3 +24,4 @@ No.|Title|Solution|Acceptance|Difficulty|
 0257|Binary Tree Paths|[Go](https://github.com/rosenlo/leetcode/tree/master/topics/0257.BinaryTreePaths)|53.6%|Easy
 0404|Sum of Left Leaves|[Go](https://github.com/rosenlo/leetcode/tree/master/topics/0404.SumOfLeftLeaves)|52.3%|Easy
 0501|Find Mode in Binary Search Tree|[Go](https://github.com/rosenlo/leetcode/tree/master/topics/0501.FindModeinBinarySearchTree)|43.4%|Easy
+0530|Minimum Absolute Difference in BST|[Go](https://github.com/rosenlo/leetcode/tree/master/topics/0530.MinimumAbsoluteDifferenceInBST)|54.8%|Easy
